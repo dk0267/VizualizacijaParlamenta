@@ -627,16 +627,20 @@ function centerCanvas(cnv) {
 	cnv.position(x, y);
 }
 
-
+//SET VARS
 var canvas_padding = 35;
-
+var server_mode = false;
 
 
 var xml;
 
 //data preload
 function preload() {
-	xml = loadXML('data/'+datas[0]);
+	if (!server_mode){
+		xml = loadXML('data/'+datas[0]);}
+	else{
+		xml = loadXML('http://travca.si/OO/libs/data/'+datas[0]);}
+		
 }
 
 var dict;
