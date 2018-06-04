@@ -1,14 +1,15 @@
 //------------------------DATA PREPPIN-----------------------
-var datas = ["exe.xml","ind.xml","leg.xml","pol.xml","nat.xml"];
+var datas = ["t51.xml","t491.xml","t472.xml","t130.xml","t314.xml","t50.xml"];
 var legendArray = [
-"izvršilna veja oblasti",
-"neodvisni poslanci",
-"zakonodajna veja oblasti",
-"politična stranka",
-"narodne skupnosti"
+"Dnevni red",
+"Stališča Skupščine Republike Slovenije do zakonov iz pristojnosti Skupščine SFRJ",
+"Pobude, predlogi in vprašanja poslancev",
+"Zakon o lastninskem preoblikovanju podjetij",
+"Zakon o proračunu Republike Slovenije za leto 1992",
+"Ugotavljanje prisotnosti"
 ];//copied from accdb
 //fab colors
-var colorArray = ["109,154,167","160,179,156","73,120,64","239,229,171","255,212,98"];
+var colorArray = ["156, 195, 206","109,154,167","160,179,156","73,120,64","239,229,171","255,212,98"];
 //xAxis texts
 var dates = ["05-1990","06-1990","07-1990","08-1990","09-1990","10-1990","11-1990","12-1990","01-1991","02-1991","03-1991","04-1991","05-1991","06-1991","07-1991","08-1991","09-1991","10-1991","11-1991","12-1991","01-1992","02-1992","03-1992","04-1992","05-1992","06-1992","07-1992","08-1992","09-1992","10-1992","11-1992","12-1992"];
 
@@ -102,7 +103,6 @@ function allCount(inputString){
 	return avgVal;
 }
 
-
 function attendanceCount(inputString1, inputString2){
 	var splitArr1 = inputString1.split(",");
 	var splitArr2 = inputString2.split(",");
@@ -171,11 +171,11 @@ var foundWord = false;
 		if (isIn(['biti','tako','tudi','zato'],word)) continue;
 		if (word == filterWord.toString()){
 		//najdl besedo, rukn v array
-//console.log(word);
-console.log(allCount(count));
+//console.log("HI:"+count);
+//console.log(allCount(count));
 			dictArray.push(count);
 			dictKeys.push(word);
-			foundWord = true;
+foundWord = true;
 		}
 		
 		cntAtt = attendanceCount(cntAtt, count);
@@ -185,9 +185,7 @@ console.log(allCount(count));
 
 	}
 
-
 	if (foundWord == false) dictArray.push("0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,");
-
 	dictAttendance.push(cntAtt);
 	
 }
@@ -223,11 +221,13 @@ function drawArrowHead(x,y, orientation){
 
 }
 
+//nodata error report message
 function drawNoData(x,y){
 		textSize(30);
 		text("Ni podatkov!",x,y);
 
 }
+
 
 
 //function that draws legend
@@ -391,6 +391,7 @@ function drawCSystem()
 	drawLegend(xPad + yPad,yPad/2,20);
 	fill(255,255,255);
 	//lines on xAxis
+
 	if (dictArray.length == 0)
 	{
 		//ERROR NO DATa
@@ -398,9 +399,11 @@ function drawCSystem()
 
 	}
 
+
 //narisemo se izbrano besedo
 	textSize(30);
 	text(dictKeys[0],windowWidth/2-xPad, yPad);
+
 
 
 	for (var i = 1; i <= dates.length; i++){
@@ -438,11 +441,8 @@ function drawCSystem()
 	previousY = windowHeight*weightScreen - yPad;
 
 	//if (debug_mode)
-		console.log(dictAttendance);
-
-	console.log(dictArray.length);
-
-
+		//console.log(dictAttendance);
+console.log(dictArray[0]);
 	for (var i = 0; i < dictArray.length; i++){
 		//(x, inputPoints, color, upY,downY)
 		drawPoints(windowWidth*weightScreen*weightX*1, xPad,dictArray[i], dictAttendance[i], colorArray[i], yPad, windowHeight*weightScreen - yPad );

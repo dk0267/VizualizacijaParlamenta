@@ -1,0 +1,454 @@
+{ "nodes":
+[ 
+
+	
+    {
+      "id": "0",
+      "root": true,
+	  "cluster":"0",
+      "type": "beseda",
+      "title": "Organizacije"
+    },
+		
+
+	{ 
+	"id": "2",
+	"cluster": "1", 
+	"title": "izvršilna veja oblasti", 
+	"type": "hed_root",
+	"relatedness": "0.1" 
+	},	
+	
+	{ 
+	"id": "3",
+	"cluster": "2", 
+	"title": "neodvisni poslanci", 
+	"type": "ind_root",
+	"relatedness": "0.1" 
+	},	
+	
+	{ 
+	"id": "4",
+	"cluster": "3", 
+	"title": "zakonodajna veja oblasti",
+	"type": "leg_root",
+	"relatedness": "10" 
+	},		
+	
+	{ 
+	"id": "5",
+	"cluster": "4", 
+	"title": "narodne skupnosti",
+	"type": "nat_root",	
+	"relatedness": "0.9" 
+	},	
+	
+	{ 
+	"id": "6",
+	"cluster": "5", 
+	"title": "politična stranka", 
+	"type": "pol_root",
+	"relatedness": "20" 
+	},
+
+	
+	{ 
+	"id": "21",
+	"cluster": "1", 
+	"title": "zakon",
+	"type": "hed_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "22",
+	"cluster": "1", 
+	"title": "drug", 
+	"type": "hed_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "23",
+	"cluster": "1", 
+	"title": "seveda", 
+	"type": "hed_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "24",
+	"cluster": "1", 
+	"title": "lahko", 
+	"type": "hed_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "25",
+	"cluster": "1", 
+	"title": "Slovenija", 
+	"type": "hed_node",	
+	"relatedness": "0.2" 
+	},
+
+	{ 
+	"id": "31",
+	"cluster": "2", 
+	"title": "zakon",
+	"type": "ind_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "32",
+	"cluster": "2", 
+	"title": "amandma", 
+	"type": "ind_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "33",
+	"cluster": "2", 
+	"title": "člen",
+	"type": "ind_node",		
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "34",
+	"cluster": "2", 
+	"title": "predlog", 
+	"type": "ind_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "35",
+	"cluster": "2", 
+	"title": "Slovenija", 
+	"type": "ind_node",	
+	"relatedness": "0.2" 
+	},
+	
+	{ 
+	"id": "41",
+	"cluster": "3", 
+	"title": "zakon",
+	"type": "leg_node",		
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "42",
+	"cluster": "3", 
+	"title": "amandma", 
+	"type": "leg_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "43",
+	"cluster": "3", 
+	"title": "predlog", 
+	"type": "leg_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "44",
+	"cluster": "3", 
+	"title": "člen", 
+	"type": "leg_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "45",
+	"cluster": "3", 
+	"title": "Slovenija", 
+	"type": "leg_node",	
+	"relatedness": "0.2" 
+	},
+
+	{ 
+	"id": "51",
+	"cluster": "4", 
+	"title": "zakon", 
+	"type": "nat_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "52",
+	"cluster": "4", 
+	"title": "Slovenija", 
+	"type": "nat_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "53",
+	"cluster": "4", 
+	"title": "stranka",
+	"type": "nat_node",		
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "54",
+	"cluster": "4", 
+	"title": "predlog", 
+	"type": "nat_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "55",
+	"cluster": "4", 
+	"title": "skupščina", 
+	"type": "nat_node",	
+	"relatedness": "0.2" 
+	},
+	
+	{ 
+	"id": "61",
+	"cluster": "5", 
+	"title": "zakon", 
+	"type": "pol_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "62",
+	"cluster": "5", 
+	"title": "amandma",
+	"type": "pol_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "63",
+	"cluster": "5", 
+	"title": "predlog",
+	"type": "pol_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "64",
+	"cluster": "5", 
+	"title": "Slovenija",
+	"type": "pol_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "65",
+	"cluster": "5", 
+	"title": "zbor", 
+	"type": "pol_node",
+	"relatedness": "0.2" 
+	}
+	
+],
+"edges": 
+[
+
+	
+	{
+    "source": "0",
+    "target": "2",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "2",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "3",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "4",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "5",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "6",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "2",
+    "target": "21",
+    "relatedness": "13755"
+	},
+	
+	{
+    "source": "2",
+    "target": "22",
+    "relatedness": "3145"
+	},
+	
+	{
+    "source": "2",
+    "target": "23",
+    "relatedness": "2193"
+	},
+	
+	{
+    "source": "2",
+    "target": "24",
+    "relatedness": "2384"
+	},
+	
+	{
+    "source": "2",
+    "target": "25",
+    "relatedness": "2649"
+	},
+	
+	{
+    "source": "3",
+    "target": "31",
+    "relatedness": "10274"
+	},
+	
+	{
+    "source": "3",
+    "target": "32",
+    "relatedness": "9643"
+	},
+	
+	{
+    "source": "3",
+    "target": "33",
+    "relatedness": "4627"
+	},
+	
+	{
+    "source": "3",
+    "target": "34",
+    "relatedness": "3522"
+	},
+	
+	{
+    "source": "3",
+    "target": "35",
+    "relatedness": "2168"
+	},
+	
+	{
+    "source": "4",
+    "target": "41",
+    "relatedness": "75730"
+	},
+	
+	{
+    "source": "4",
+    "target": "42",
+    "relatedness": "51581"
+	},
+	
+	{
+    "source": "4",
+    "target": "43",
+    "relatedness": "52690"
+	},
+	
+	{
+    "source": "4",
+    "target": "44",
+    "relatedness": "35322"
+	},
+	
+	{
+    "source": "4",
+    "target": "45",
+    "relatedness": "32435"
+	},
+
+	{
+    "source": "5",
+    "target": "51",
+    "relatedness": "94"
+	},
+	
+	{
+    "source": "5",
+    "target": "52",
+    "relatedness": "46"
+	},
+	
+	{
+    "source": "5",
+    "target": "53",
+    "relatedness": "32"
+	},
+	
+	{
+    "source": "5",
+    "target": "54",
+    "relatedness": "31"
+	},
+	
+	{
+    "source": "5",
+    "target": "55",
+    "relatedness": "28"
+	},
+	
+	{
+    "source": "6",
+    "target": "61",
+    "relatedness": "62856"
+	},
+	
+	{
+    "source": "6",
+    "target": "62",
+    "relatedness": "#41931"
+	},
+	
+	{
+    "source": "6",
+    "target": "63",
+    "relatedness": "43258"
+	},
+	
+	{
+    "source": "6",
+    "target": "64",
+    "relatedness": "28596"
+	},
+	
+	{
+    "source": "6",
+    "target": "65",
+    "relatedness": "27411"
+	}
+
+	
+]
+}

@@ -1,0 +1,530 @@
+{ "nodes":
+[ 
+
+	
+    {
+      "id": "0",
+      "root": true,
+	  "cluster":"0",
+      "type": "beseda",
+      "title": "Tematike"
+    },
+		
+	{ 
+	"id": "1",
+	"cluster": "1", 
+	"title": "Dnevni red", 
+	"type": "exe_root",
+	"relatedness": "0.1" 
+	},	
+	
+	{ 
+	"id": "2",
+	"cluster": "2", 
+	"title": "Zakon o lastnini podjetij", 
+	"type": "hed_root",
+	"relatedness": "0.1" 
+	},	
+	
+	{ 
+	"id": "3",
+	"cluster": "3", 
+	"title": "Pobude, predlogi, vprašanja", 
+	"type": "ind_root",
+	"relatedness": "0.1" 
+	},	
+	
+	{ 
+	"id": "4",
+	"cluster": "4", 
+	"title": "Zakon o proračunu RS",
+	"type": "leg_root",
+	"relatedness": "10" 
+	},		
+	
+	{ 
+	"id": "5",
+	"cluster": "5", 
+	"title": "Stališča skupščine RS",
+	"type": "nat_root",	
+	"relatedness": "0.9" 
+	},	
+	
+	{ 
+	"id": "6",
+	"cluster": "6", 
+	"title": "Ugotavljanje prisotnosti", 
+	"type": "pol_root",
+	"relatedness": "20" 
+	},
+
+	{ 
+	"id": "11",
+	"cluster": "1", 
+	"title": "zakon",
+	"type": "exe_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "12",
+	"cluster": "1", 
+	"title": "predlog", 
+	"type": "exe_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "13",
+	"cluster": "1", 
+	"title": "dneven", 
+	"type": "exe_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "14",
+	"cluster": "1", 
+	"title": "zbor", 
+	"type": "exe_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "15",
+	"cluster": "1", 
+	"title": "točka", 
+	"type": "exe_node",	
+	"relatedness": "0.2" 
+	},
+	
+	{ 
+	"id": "21",
+	"cluster": "2", 
+	"title": "zakon",
+	"type": "hed_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "22",
+	"cluster": "2", 
+	"title": "podjetje", 
+	"type": "hed_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "23",
+	"cluster": "2", 
+	"title": "amandma", 
+	"type": "hed_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "24",
+	"cluster": "2", 
+	"title": "predlog", 
+	"type": "hed_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "25",
+	"cluster": "2", 
+	"title": "drug", 
+	"type": "hed_node",	
+	"relatedness": "0.2" 
+	},
+
+	{ 
+	"id": "31",
+	"cluster": "3", 
+	"title": "pobuda",
+	"type": "ind_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "32",
+	"cluster": "3", 
+	"title": "Slovenija", 
+	"type": "ind_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "33",
+	"cluster": "3", 
+	"title": "vprašanje",
+	"type": "ind_node",		
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "34",
+	"cluster": "3", 
+	"title": "hvala", 
+	"type": "ind_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "35",
+	"cluster": "3", 
+	"title": "skupščina", 
+	"type": "ind_node",	
+	"relatedness": "0.2" 
+	},
+	
+	{ 
+	"id": "41",
+	"cluster": "4", 
+	"title": "amandma",
+	"type": "leg_node",		
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "42",
+	"cluster": "4", 
+	"title": "proračun", 
+	"type": "leg_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "43",
+	"cluster": "4", 
+	"title": "vlada", 
+	"type": "leg_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "44",
+	"cluster": "4", 
+	"title": "gospod", 
+	"type": "leg_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "45",
+	"cluster": "4", 
+	"title": "sredstvo", 
+	"type": "leg_node",	
+	"relatedness": "0.2" 
+	},
+
+	{ 
+	"id": "51",
+	"cluster": "5", 
+	"title": "zakon", 
+	"type": "nat_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "52",
+	"cluster": "5", 
+	"title": "predlog", 
+	"type": "nat_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "53",
+	"cluster": "5", 
+	"title": "republika",
+	"type": "nat_node",		
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "54",
+	"cluster": "5", 
+	"title": "sklep", 
+	"type": "nat_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "55",
+	"cluster": "5", 
+	"title": "skupščina", 
+	"type": "nat_node",	
+	"relatedness": "0.2" 
+	},
+	
+	{ 
+	"id": "61",
+	"cluster": "6", 
+	"title": "zbor", 
+	"type": "pol_node",	
+	"relatedness": "1.8" 
+	},
+	
+	{ 
+	"id": "62",
+	"cluster": "6", 
+	"title": "seja",
+	"type": "pol_node",	
+	"relatedness": "0.8" 
+	},
+	
+	{ 
+	"id": "63",
+	"cluster": "6", 
+	"title": "prositi",
+	"type": "pol_node",	
+	"relatedness": "0.1" 
+	},
+	
+	{ 
+	"id": "64",
+	"cluster": "6", 
+	"title": "amandma",
+	"type": "pol_node",	
+	"relatedness": "0.3" 
+	},
+	
+	{ 
+	"id": "65",
+	"cluster": "6", 
+	"title": "zakon", 
+	"type": "pol_node",
+	"relatedness": "0.2" 
+	}
+	
+],
+"edges": 
+[
+
+	
+	{
+    "source": "0",
+    "target": "1",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "2",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "3",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "4",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "5",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+	
+	{
+    "source": "0",
+    "target": "6",
+    "relatedness": "",
+	"distance": "0.1"
+	},
+
+	{
+    "source": "1",
+    "target": "11",
+    "relatedness": "138497"
+	},
+	
+	{
+    "source": "1",
+    "target": "12",
+    "relatedness": "126139"
+	},
+	
+	{
+    "source": "1",
+    "target": "13",
+    "relatedness": "84723"
+	},
+	
+	{
+    "source": "1",
+    "target": "14",
+    "relatedness": "60349"
+	},
+	
+	{
+    "source": "1",
+    "target": "15",
+    "relatedness": "48546"
+	},
+	
+	{
+    "source": "2",
+    "target": "21",
+    "relatedness": "20019"
+	},
+	
+	{
+    "source": "2",
+    "target": "22",
+    "relatedness": "17777"
+	},
+	
+	{
+    "source": "2",
+    "target": "23",
+    "relatedness": "15599"
+	},
+	
+	{
+    "source": "2",
+    "target": "24",
+    "relatedness": "14160"
+	},
+	
+	{
+    "source": "2",
+    "target": "25",
+    "relatedness": "10895"
+	},
+	
+	{
+    "source": "3",
+    "target": "31",
+    "relatedness": "41202"
+	},
+	
+	{
+    "source": "3",
+    "target": "32",
+    "relatedness": "42537"
+	},
+	
+	{
+    "source": "3",
+    "target": "33",
+    "relatedness": "42918"
+	},
+	
+	{
+    "source": "3",
+    "target": "34",
+    "relatedness": "36543"
+	},
+	
+	{
+    "source": "3",
+    "target": "35",
+    "relatedness": "27851"
+	},
+	
+	{
+    "source": "4",
+    "target": "41",
+    "relatedness": "19348"
+	},
+	
+	{
+    "source": "4",
+    "target": "42",
+    "relatedness": "18258"
+	},
+	
+	{
+    "source": "4",
+    "target": "43",
+    "relatedness": "12494"
+	},
+	
+	{
+    "source": "4",
+    "target": "44",
+    "relatedness": "10369"
+	},
+	
+	{
+    "source": "4",
+    "target": "45",
+    "relatedness": "9982"
+	},
+
+	{
+    "source": "5",
+    "target": "51",
+    "relatedness": "64911"
+	},
+	
+	{
+    "source": "5",
+    "target": "52",
+    "relatedness": "54046"
+	},
+	
+	{
+    "source": "5",
+    "target": "53",
+    "relatedness": "39763"
+	},
+	
+	{
+    "source": "5",
+    "target": "54",
+    "relatedness": "37502"
+	},
+	
+	{
+    "source": "5",
+    "target": "55",
+    "relatedness": "36891"
+	},
+	
+	{
+    "source": "6",
+    "target": "61",
+    "relatedness": "26186"
+	},
+	
+	{
+    "source": "6",
+    "target": "62",
+    "relatedness": "21043"
+	},
+	
+	{
+    "source": "6",
+    "target": "63",
+    "relatedness": "13774"
+	},
+	
+	{
+    "source": "6",
+    "target": "64",
+    "relatedness": "10580"
+	},
+	
+	{
+    "source": "6",
+    "target": "65",
+    "relatedness": "#11321"
+	}
+
+	
+]
+}
